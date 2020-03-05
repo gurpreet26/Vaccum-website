@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- Nehaben Patel 
+    c0750073-->
+<html lang="en">
+		<head>
+				<link rel="stylesheet" href="CSS/team.css">
+				<title>GREEN MOw</title>
+				<meta charset="utf-8">
+			</head>
+			<body>
+					<div id="container">
+				<header>
+						<img src="images/logo.jpg" alt="Company Logo" height="150" width="200">
+					
+			
+				</header>
+				
+				<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="team.html">Our Team</a></li>
+							<li><a href="http://12.42.204.30:7272/products_v1.html">Product</a></li>
+							<li><a href="training.html">Training Schedule</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+				</nav>
+				<div id="banner">
+				
+						<img src="images/banner.jpg" alt="Banner of company" height="200" width="100%">
+					
+					</div>
+		<main>
+			<article>
+                <h2>Meet our CEO</h2>
+                <h3>Jane Rose</h3>
+				
+				<img src="images/ceo.jpg" alt="image for CEO" class="desktop">
+				<h6>Something from CEO Desk...</h6>
+                <p>In keeping with these principles, we here at GREEN MOw Lawn Mower company try to be mindful of all the ways you, 
+                    our donor partners, connect with us, your community.  Lately, I’ve been thinking about that every day. </p>
+                <p>We offers superb quality and superior value built to last. From unique features engineered to save you time and 
+                    money to clever technology that simply makes your lawn mowing experience easier.</p>
+				
+			<aside>Did you know the she awarded as the best CEO in year 2018?</aside>
+			</article>
+			
+			<article>
+                <h2>Company's Manager</h2>
+                <h3>Joe Mathew</h3>
+				
+				<img src="images/manager.jpg" alt="Manager's image" class="desktop">
+				<h6>From Manager's Desk</h6>
+				
+				<p>I am with this company since it is established.</p>
+				<p>Best part of the company why I am sill working with this company that this company never copromise with products</p>
+				<p>Customers are our priorities.</p>
+				<aside>Did you know when our company Established?</aside>
+				
+			</article>
+			
+			<article>
+                    <h2>IT Professional</h2>
+                    <h3>Advin Bricks</h3>
+					
+                    <img src="images/itDept.jpg" alt="IT Department Manager" class="desktop">
+                    <h6>Something from our IT Deoartment Manager</h6>
+					<p>Everywhere we turn in the business world, the power of digital disruptions has been providing a transformative edge to those who understand it. </p> 
+                    <p>One would hence assume that the IT service pioneers with a knack for digital know how should be the leading transformers of their own environments. </p> 
+                    <p>that’s not happening. Why? Because our enormously successful industry believes it has already perfected the ‘people & process’ models that are required for our business. </p>
+                    <p>our winning formula stays unchanged: an outward focus on the evolving needs of our customer base. For instance, presently, we are busy capitalizing on the massive appetite for digital transformation technologies in the global markets. 
+                    Unfortunately, our steadfast focus on ‘opportunities’ has blindfolded us to the ‘threats’ that this very digital transformation poses to our own relevance!</p>
+					<aside>Did you know we ranked as number one company as Fortune 500 list in year 2018?</aside>
+			</article>
+		</main>
+		
+		<!--Use the footer area to add webpage footer content-->
+		<footer>
+			&copy; Copyright 2015. All Rights Reserved. <br>
+			<a href = "mailto:forwardfitness@club.net"> forwardfitness@club.net </a>
+		</footer>
+		
+	</div>
+	</body>
+</html>

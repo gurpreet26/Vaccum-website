@@ -1,0 +1,638 @@
+/*-------------------------
+	Simple reset
+--------------------------*/
+#container{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+html{
+	background:url('../img/bg_tile.jpg') #333d43;
+	
+}
+
+/*-------------------------
+	General Styles
+--------------------------*/
+
+body{
+	background:url('../img/bg_head.jpg') repeat-x top center, url('../img/bg_vert.jpg') repeat-x;
+	min-height:500px;
+	font:14px/1.3 'Segoe UI',Arial, sans-serif;
+	color:#888;
+	padding:10px;
+}
+/* Style for footer specifies font size, text alignment, and top margin */
+footer {
+    font-size: 0.70em;
+    text-align: center;
+    margin-top: 2em;
+    color: #FFFFFF;
+}
+
+
+a, a:visited {
+	text-decoration:none;
+	outline:none;
+	color:#54a6de;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+section, footer, nav{
+	display: block;
+}
+
+
+/*----------------------------
+	The Navigation Menu
+-----------------------------*/
+
+
+#colorNav > ul{
+	width: 450px; /* Increase when adding more menu items */
+	margin:0 auto;
+}
+
+#colorNav > ul > li{ /* will style only the top level li */
+	list-style: none;
+	box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset,1px 1px 1px #CCC;
+	display: inline-block;
+	line-height: 1;
+	margin: 1px;
+	border-radius: 3px;
+	position:relative;
+}
+
+#colorNav > ul > li > a{
+	color:inherit;
+	text-decoration:none !important;
+	font-size:24px;
+	padding: 25px;
+}
+
+#colorNav li ul{
+	position:absolute;
+	list-style:none;
+	text-align:center;
+	width:180px;
+	left:50%;
+	margin-left:-90px;
+	top:70px;
+	font:bold 12px 'Open Sans Condensed', sans-serif;
+	
+	/* This is important for the show/hide CSS animation */
+	max-height:0px;
+	overflow:hidden;
+	
+	-webkit-transition:max-height 0.4s linear;
+	-moz-transition:max-height 0.4s linear;
+	transition:max-height 0.4s linear;
+}
+
+#colorNav li ul li{
+	background-color:#313131;
+}
+
+#colorNav li ul li a{
+	padding:12px;
+	color:#fff !important;
+	text-decoration:none !important;
+	display:block;
+}
+
+#colorNav li ul li:nth-child(odd){ /* zebra stripes */
+	background-color:#363636;
+}
+
+#colorNav li ul li:hover{
+	background-color:#444;
+}
+
+#colorNav li ul li:first-child{
+	border-radius:3px 3px 0 0;
+	margin-top:25px;
+	position:relative;
+}
+
+#colorNav li ul li:first-child:before{ /* the pointer tip */
+	content:'';
+	position:absolute;
+	width:1px;
+	height:1px;
+	border:5px solid transparent;
+	border-bottom-color:#313131;
+	left:50%;
+	top:-10px;
+	margin-left:-5px;
+}
+
+#colorNav li ul li:last-child{
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+}
+
+/* This will trigger the CSS */
+/* transition animation on hover */
+
+#colorNav li:hover ul{
+	max-height:200px; /* Increase when adding more dropdown items */
+}
+
+
+/*----------------------------
+	Color Themes
+-----------------------------*/
+
+
+#colorNav li.green{
+	/* This is the color of the menu item */
+	background-color:#00c08b;
+	
+	/* This is the color of the icon */
+	color:#127a5d;
+}
+
+#colorNav li.red{		background-color:#ea5080;color:#aa2a52;}
+#colorNav li.blue{		background-color:#53bfe2;color:#2884a2;}
+#colorNav li.yellow{	background-color:#f8c54d;color:#ab8426;}
+#colorNav li.purple{	background-color:#df6dc2;color:#9f3c85;}
+
+
+/*----------------------------
+	The Footer
+-----------------------------*/
+
+
+footer{
+	background-color: #111111;
+	bottom: 0;
+	box-shadow: 0 -1px 2px #111111;
+	height: 45px;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 100000;
+}
+
+footer h2{
+	color: #EEEEEE;
+	font-size: 14px;
+	font-weight: normal;
+	left: 50%;
+	margin-left: -400px;
+	padding: 13px 0 0;
+	position: absolute;
+	width: 540px;
+}
+
+footer h2 i{
+	font-style:normal;
+	color:#888;
+}
+
+footer a.tzine,a.tzine:visited{
+	color: #999999;
+	font-size: 12px;
+	left: 50%;
+	margin: 16px 0 0 110px;
+	position: absolute;
+	text-decoration: none;
+	top: 0;
+}
+
+footer a i{
+	color:#ccc;
+	font-style: normal;
+}
+
+footer a i b{
+	color:#c92020;
+	font-weight: normal;
+}
+#main-content {
+    width: 780px;
+	float: left;
+	margin-left: 2em;
+	margin-top: 2em;
+}
+#news {
+	background-color: darkgreen;
+	color: #111111;
+    margin-left: 20px;
+    float: left;
+	width: 180px;
+	margin-right: 2em;
+	margin-top: 2em;
+}
+/*Style for main h2 element*/
+main h2 {
+	color: #D8BFD8;
+}
+.desktop{
+	margin-left: 2em;
+	text-align: justify;
+}
+
+.desktop h4{
+	color: white;
+	font-size: 1.5em;
+}
+/* Style sheet created by: Nehaben Patel, 03/04/2019 */
+
+/* Style for body specifies a background color */
+body{
+						background-color: #1D1D1C;
+		}
+/* Style to create a fluid image*/
+
+img {
+		max-width: 100%;
+    }
+    
+/* Styles for Mobile Layout*/
+
+/* Style for container centers the page and sets the elements width */
+#container{
+	 					width: 100%;
+	 					margin-left: auto;
+	 					margin-right: auto;
+					
+					}
+
+/* Styles for header specifies top margin, background color, rounded corners, and center-aligns content*/					
+header {
+            text-align: left;
+            color: #D8BFD8;
+		}
+				
+
+/*Style displays the mobile class*/
+.mobile {
+					display: inline;
+				}
+/*Style hides the desktop class */
+.desktop {
+					display: none;
+				 }
+/* Style for main element specifies a block display, text properties, margins, padding, rounded corners, and border properties */
+main {
+						display: block;
+						font-family: Verdana, Arial, sans-serif;
+						font-size: 1em;
+						margin-top: 0.5em;
+						padding: 1em;
+						border-radius: 2em 0 2em 0;
+						background-color: #FFFFFF;
+						opacity: 0.85;
+		 }
+
+/* Style for another elements within the main element */
+
+main a {
+					background-color: #9D9D93;
+					border-radius: 1em;
+					color: #FFFFFF;
+					font-weight: bold;
+					padding: 0.5em;
+					text-decoration: none;
+}		 
+/* Style for footer specifies font size, text alignment, and top margin */
+footer {
+						font-size: 0.70em;
+						text-align: center;
+						margin-top: 2em;
+						color: #FFFFFF;
+			 }
+			 
+/*Style rule specifies to not display the equip class */
+.equip {
+						display:none;
+			 }
+.tablet {
+						display: none;
+				}
+/*Style for another anchor elements within the footer */
+footer a {
+						color: #FFFFFF;
+						text-decoration: none;
+}
+/*Style for aside element*/
+aside{
+				font-style:italic;
+}
+
+/*Style rule for input, select,and textarea form elements */
+input, select, textarea {
+		display: block;
+		margin-bottom: 1em;
+}
+
+/*Style rule for label element */
+label {
+		display: block;
+}
+
+/*Style rule for unordered list within a form*/
+form ul{
+			list-style-type: none;
+}
+
+/*Style rule for chkbx class*/
+.chkbx {
+			display: inline-block;
+}
+
+  input.radio {
+	float: left;
+	clear: none;
+  }
+/*Media query for tablet viewport targets screen size with a minimum width of 660px. */
+
+@media only screen and (min-width: 660px)
+{
+/* style specifies clear and top margin properties for the main element */
+
+main{
+				clear:left;
+				margin-top: -0.3em;
+				border-radius: 0;
+				overflow:auto; 
+		}
+/*Style specifies to hide the mobile class*/
+
+.mobile{
+					display: none;
+				}
+
+/* style specifies to display the desktop class */
+
+.desktop{
+						display: inline;
+}
+/* Style specifies a display, float, and padding for the equip class */
+
+.equip{
+				display: inline;
+				float: left;
+				margin-right: 1.5em;
+				}
+/* Style specifies a display, list style position, and bottom margin for the itmes class*/
+.items {
+					display: block;
+					list-style-position: inside;
+				}
+/* Style specifies a display the table class */
+
+.tablet {
+					display: block;
+					margin-top: -3em;
+					margin-bottom: -1em;
+				}
+/* Style specifies a font weight and top margin for description list terms */
+dt{
+		font-weight: bold;
+		margin-top: 0.7em;
+	}
+/*Style for h1 element */
+h1 {
+		text-align: center;
+}
+/*Style for images within the figure element */
+figure img {
+							background-color: #1D1D1C;
+							display: inline;
+							height: 8em;
+							width: 28%;
+							margin: 1%;
+							padding: 1%;
+}
+
+/*style for another elements within the figure element */
+figure a {
+						background-color: transparent;
+						padding: 0;
+						text-decoration: none;
+}
+/*Style for specificies bottom padding for the section element*/
+section {
+					padding-bottom:3em;
+}
+/*Style for h1 element within the section element*/
+section h1{
+						text-align: left;
+}
+/*Style for anchor element within the section element*/
+section a {
+						background-color: transparent;
+						color:#1D1D1C;
+						font-weight: normal;
+						padding: 0;
+						text-decoration: underline;
+}
+/* Style for contact class */
+.contact {
+						background-color: transparent;
+						color: #1D1D1C;
+						padding:0;
+						text-decoration: underline;
+}
+/*Style for article element*/
+article{
+					background-color: #C1D9CA;
+					float: left;
+					margin: 0.5%;
+					padding:0.5%;
+					text-align: center;
+					width: 31%;
+}
+/*Style for image element contained within the main article element*/
+main article img{
+									border: solid 0.1em #1D1D1C;
+									margin-left: auto;
+									margin-right: auto;
+}
+/*Style for paragraph element contained within the main article element*/
+main article p{
+								color: #000000;
+								margin-top: 2%;
+								padding: 1%;
+								text-align: left;
+}
+/*Style for unordered list element contained within the main article element*/
+main article ul{
+									text-align: left;
+}
+/*Style for aside element*/ 
+aside{ background-color: #FFFFFF;
+				border-radius: 0 5em 5em 5em;
+				box-shadow: 1em 1em 1em #4C4F4D;
+				padding:1.5em;
+				margin: 1em;
+									
+}
+
+/*Style for table element*/
+table {
+		border: 0.1em solid #000000;
+		border-collapse: collapse;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+}
+/*Style specifies border and padding for th and td elements */
+th, td {
+		border: 0.1em solid #000000;
+		padding: 1em;
+}
+th {
+	background-color: #1D1D1C;
+	color: #FFFFFF;
+}
+/*Style for caption element*/
+caption {
+			font-size: 1.5em;
+			font-weight: bold;
+			padding-bottom: 0.5em;
+}
+
+/*Style rule for label element*/
+label{
+		float: left;
+		padding-left: 0.5em;
+		text-align:left;
+		width: 10em;
+}
+/*Style rule for btn class*/
+.btn{
+		margin-left: 12em;
+}
+}
+
+/*Media query for desktop viewport targets screen size with a minimum width of 830px. */
+
+@media only screen and (min-width: 830px)
+{
+/* Style specifies a width for container */
+
+#container {
+							background-color: #1D1D1C;
+						}
+/*Styles to left align header */
+header{
+				text-align: left;
+}
+/* styles specifies border, box shadow, and margins for the main element */
+main{
+			background-color: #1D1D1C;
+}
+
+/* Style specifies left and right padding for paragraph elements within the main element */
+main p{
+				color: #FFFFFF;
+				margin-left: auto;
+				margin-right: auto;
+				width: 90%;
+}
+
+/* Style specifies a gradient for the body element*/
+body{
+			background-color: #FFFFFF;
+}
+
+/*Style specifies color and left margin for the section element*/
+section{
+					color: #FFFFFF;
+					margin-left: 1em;
+					padding-bottom: 5em;
+}
+
+/*Style for anchor element within the section element*/
+section a{
+						color: #FFFFFF;		
+}
+
+/*Style for paragraph within the section element*/
+section p{
+						margin-left: 0;
+}
+/* Styles specifies a gradient for the body element */
+
+body{
+	background-color: #313131;
+}
+
+/*Style applies color to h1 element*/
+h1{
+	color: #FFFFFF;
+}
+/*Styles applies height and opacity to images within figure element*/
+figure img{
+						height: 15em;
+						opacity: 0.7;
+}
+
+/*Styles removes transparency on hover*/
+figure img:hover {
+										opacity:1;
+}
+
+/*Styles specifies a background color, margin, and padding for footer element */
+footer {
+					background-color: #2A2A2A;
+					margin-top: -0.2em;
+					padding: 2em;
+}
+/*Style for main h2 element*/
+main h2 {
+					color: #FFFFFF;
+}
+/*Style for contact class*/
+.contact {
+						color: #FFFFFF;
+}
+/*Style for main article h2 element*/
+main article h2{
+								color: #000000;
+}
+/*Style for table element*/
+table {
+		background-color: #FFFFFF;
+		width: 85%;
+}
+/*Style for caption element*/
+caption{
+		color: #FFFFFF;
+}
+
+/*Style rule for form element*/
+form {
+		background-color: #FFFFFF;
+		padding: 1em;
+}
+
+/*Style rule for paragraph with form element*/
+form p{
+		color: #000000;
+}
+.btn {
+	display: inline;
+	color: #000000;
+	background-color:#268f49;
+	font-size: 1.5em;
+	border: 1px solid #660;
+	margin-right:-12em;
+	padding: 4px;        
+   }
+   
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<link rel="stylesheet" href="CSS/about.css">
+				<title>GREEN MOw</title>
+				<meta charset="utf-8">
+			</head>
+<body>
+	<div id="container">
+        				<header>
+						<img src="images/logo.jpg" alt="Company Logo" height="150" width="200">
+			
+				</header>
+        
+    <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li> <a href="team.html">Our Team</a></li>
+                <li><a href="http://12.42.204.30:7272/products_v1.html">Product</a></li>
+                <li> <a href="training.html">Training Schedule</a></li>
+                <li> <a href="contact.html">Contact Us</a></li>
+            </ul>
+    </nav>
+	<main>
+            <div class="mobile">
+                    <h3>Need Lawn mower or just a small repair?</h3>
+                    <p><a href="tel:5193129555">Call us today</a> and get discount up to 10%</p>
+            </div>
+            <div class="desktop">
+	            <h3>About Us</h3>
+	            <p>GREEN MOw is a retail organization that sell all the kind of lawn mowers direct from manufacturer.  We Founded as the Green 
+                    Motor Company in 2001 to build car engines for the reputed Company. Each day we were growing high and our company think to 
+                    start working for own product. </p>
+	            <p>After a three years and countless procedures,in 2004, GREEN MOw's Chairman, Nehaben Patel determines that our company need 
+                    to become a full-line lawn and garden manufacturer.Despite the growth and change of over twenty years of experience, the 
+                    team at GREEN MOw has consistently impressed our clients by creating and marketing most of the lawn mower’s brand that make 
+                    them happy.Because of our commitment to attentive service, client relationships, green practices and community involvement, 
+                    GREEN MOw is considered one of Sarnia’s premiere lawn mower’s firms.</p>
+                <p>Anyone who is wants best lawn mowers with good price is welcome. Many say that the best part of connecting with us is our 
+                    after service.</p>
+                <ul>
+                <h4>Why to shop with us? Here we have the reasons for that....</h4>
+                <li>&nbsp;We provide best quality product</li>
+                <li>&nbsp;Good quality in less price is our main motto</li>
+                <li>&nbsp;Online product booking</li>
+                <li>&nbsp;Wide range of variety in all the brands</li>
+                <li>&nbsp;Customer service desk is running 24 X 7 to help customer</li>
+                <li>&nbsp;We do provide after service of the product, so don't worry after buying something with us. We are here to help you.</li>
+                </ul>
+            </div>
+	</main>
+	<footer>
+		<a href="mailto:lawnmow@lawnmow.com">Contact via mail to GREEN MOw</a>
+	</footer>
+	</div> <!--close the container-->
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Nehaben Patel 
+    c0750073-->
+<html lang="en">
+<head>
+				<link rel="stylesheet" href="CSS/styles.css">
+				<title>GREEN MOw</title>
+				<meta charset="utf-8">
+			</head>
+<body>
+        <div id="container">
+   				<header>
+						<img src="images/logo.jpg" alt="Company Logo" height="150" width="200">
+			
+				</header>
+				
+    		<nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="http://12.42.204.30:7272/products_v1.html">Product</a></li>
+                <li><a href="training.html">Training Schedule</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+    		</nav>
+    		<div id="banner">
+				
+						<img src="images/banner.jpg" alt="Banner of company" height="200" width="100%">
+					
+					</div>
+    <main>  
+            <p>Welcome dear customers to best Lawn Mower seller company in Sarnia.</p>
+            <p>New technology of lawn mower will run smoothly and find all types of push, gas or wireless mowers for your yard.</p>
+            <ol>
+                <li>All products are pretested before selling.</li>
+                <li>After sells services are very cheap.</li>
+                <li>Guaranteed discount to old or regular customers.</li>
+                <li>Easy to return method.</li>
+            </ol>
+            <h3>Product of week</h3>
+            <p>Yardworks is proved as a product of a week with 163cc and 3-in-1 self-propelled Lawn Mower with Briggs and Stratton In-start Engine.
+                We sell maximum numbers of products for this model as it was 50% discount on this product.
+            </p>
+            <img src="images/lawn mow.jpg" alt="Lawn mower">
+    </main>
+    <footer>
+            <p>&copy; Copyright 2099. All Rights Reserved.<br>
+                <a href="mailto:info@Greenmow.ca">Request information</a><br>
+                Nehaben Patel &nbsp; &nbsp; c0750073
+    </footer>
+        	
+    </div>
+</body>
+</html>

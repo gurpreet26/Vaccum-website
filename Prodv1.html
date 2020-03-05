@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="http://12.42.204.30:7002/jquery.jtable.js"></script>
+<script src="http://12.42.204.30:7002/scripts/helpers.js"></script>
+<link href="http://12.42.204.30:7002/themes/lightcolor/red/jtable.css" rel="stylesheet">
+
+                                                <!-- The above code should not be changed -->
+<link rel="icon" href="images/logo.png" type="image/gif" sizes="16x16">
+<link href="css/myStyles.css" rel="stylesheet"> 
+<link href="css/style1.css" rel="stylesheet">
+<!-- Modify myStyles.css to add additional styles -->
+
+<title>Vacuity</title>                             <!-- Modify title for your application -->
+
+<script>
+	$(document).ready(function() {
+		$('#container1').jtable({
+			title : 'Vacuity',
+			paging : true,
+			pageSize : 15,
+			sorting : true,
+			defaultSorting : 'PRODUCT_ID DESC',
+			actions : {
+				listAction : 'genJson2.rpgle?jtView=PRODV1'
+			},
+			fields : {
+				product_id : {
+					title : 'PRODUCT',
+					width : '20%',
+					list : true
+				},
+				description : {
+					title : 'DESCRIPTION',
+					width : '20%',
+					list : true
+				},
+				qty : {
+					title : 'QUANTITY',
+					width : '10%',
+					list : true
+				},
+				price : {
+					title : 'PRICE',
+					width : '20%',
+					list : true,
+				}
+						}
+			
+		});
+		$('#container1').jtable('load');
+	});
+</script>
+</head>
+
+<body>
+	<!-- use header area for the website name or logo -->
+	<div id="container">
+			<header>
+			
+				<a href="index.html">
+				 <img  class="" src="images/logovacuty.png" alt="vacuitylogo" >
+				  
+			 </a>
+			
+		
+		</header>
+		   
+		<nav><ul>
+				<li><a href="index.html"> Home</a> </li>  
+				<li><a href="about.html"> About Us</a></li>
+				<li><a href="team.html"> Team</a></li>
+				 <li><div class="dropdown">
+					  <button class="dropbtn">Products</button>
+					  <div class="dropdown-content">
+						<a href="PRODV1.html">ProdV1</a>
+						<a href="PRODV2.html">ProdV2</a>
+						
+					  </div>
+				   </div></li>
+				 <li><a href="training.html"> Training</a> </li>
+				<li><a href="contact.html"> Contact Us</a></li>
+				<li><a href="style.html">Style</a></li>  </ul>
+			</nav>
+	<main>
+  <div id="container1"></div>
+  </main>
+  <footer>
+		&copy; Copyright 2099. All Rights Reserved.<br>
+		<a href="mailto:info@vacuity.com">Request information</a><br>
+		GURPREET SINGH &nbsp; &nbsp; C0748166
+   </footer>
+</body>
+</html>
